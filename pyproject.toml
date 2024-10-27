@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "lux-s3-bot"
+version = "0.1.0"
+description = ""
+authors = ["Gaétan Dubuc <gaetan.dubuc@fogo.fr>"]
+readme = "README.md"
+packages = [{include = "lux_s3_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+jax = "^0.4.35"
+luxai-s3 = {path = "../Lux-Design-S3/src"}
+pygame = "^2.6.1"
+networkx = {extras = ["default"], version = "^3.4.2"}
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
