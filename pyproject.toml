@@ -8,7 +8,7 @@ packages = [{include = "lux_s3_bot"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-jax = "^0.4.35"
+jax = {extras = ["cuda12"], version = "^0.4.38"}
 luxai-s3 = {path = "../Lux-Design-S3/src"}
 pygame = "^2.6.1"
 networkx = {extras = ["default"], version = "^3.4.2"}
